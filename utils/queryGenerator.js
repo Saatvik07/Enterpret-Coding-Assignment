@@ -59,7 +59,7 @@ export const queryGenerator = (query) => {
 			condition = "==";
 	}
 	const queryString = `\"${field} ${condition} ${criteria}\"`;
-	console.log(queryString);
+	//console.log(queryString);
 	return queryString;
 };
 
@@ -74,9 +74,9 @@ export const getConjunction = (conjunction) => {
 	}
 };
 export const complexQueryGenerator = (ruleGroupObj, queryString) => {
-	console.log(ruleGroupObj);
+	//console.log(ruleGroupObj);
 	const ruleObj = ruleGroupObj.children[ruleGroupObj.children.length - 1];
-	console.log(ruleObj);
+	//console.log(ruleObj);
 	const negate = ruleGroupObj.not;
 	const conjunction = getConjunction(ruleGroupObj.conjunction);
 	if (queryString === "") {

@@ -134,11 +134,11 @@ export default function Home() {
 									query={queryObj.query}
 									onDelete={() => {
 										setActiveQueries((prev) => {
-											console.log(prev);
+											//console.log(prev);
 											const update = prev.filter((prevQueryObj) => {
 												return prevQueryObj.ID !== queryObj.ID;
 											});
-											console.log(update);
+											//console.log(update);
 											return update;
 										});
 									}}
@@ -217,7 +217,7 @@ export default function Home() {
 						options={fieldOptions}
 						className='w-1/3 mx-3'
 						onChange={(e) => {
-							console.log(e.target);
+							//console.log(e.target);
 							setValue((prev) => {
 								return {
 									...prev,
@@ -264,7 +264,7 @@ export default function Home() {
 						options={criteriaOptions}
 						className='w-1/3 mx-3'
 						onChange={(e) => {
-							console.log(e.target);
+							//console.log(e.target);
 							setValue((prev) => {
 								return {
 									...prev,

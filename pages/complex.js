@@ -179,7 +179,7 @@ export default function Complex() {
 			<Dialog
 				onProgress={() => {
 					let generatedQUery = null;
-					console.log(currentID);
+					//console.log(currentID);
 					if (
 						query[`query${currentID}`].children[query[`query${currentID}`].children.length - 1]
 							.condition &&
@@ -211,7 +211,7 @@ export default function Complex() {
 							query: "",
 						};
 						const initialState = { ...prev };
-						console.log(initialState, currentID);
+						//console.log(initialState, currentID);
 						initialState[`query${currentID}`].query = generatedQUery ? generatedQUery : queryString;
 						initialState[`query${currentID + 1}`] = initialStateInner;
 						return initialState;
@@ -289,7 +289,7 @@ export default function Complex() {
 										return newObj;
 									});
 									setQuery((prev) => {
-										console.log(prev, idx);
+										//console.log(prev, idx);
 										const prevValue = query[`query${currentID}`].children[idx];
 										const newObj = { ...prev };
 										newObj[`query${currentID}`].children[idx] = {
@@ -310,7 +310,7 @@ export default function Complex() {
 										return newObj;
 									});
 									setQuery((prev) => {
-										console.log(prev, idx);
+										//console.log(prev, idx);
 										const prevValue = query[`query${currentID}`].children[idx];
 										const newObj = { ...prev };
 										newObj[`query${currentID}`].children[idx] = {
@@ -331,7 +331,7 @@ export default function Complex() {
 										return newObj;
 									});
 									setQuery((prev) => {
-										console.log(prev, idx);
+										//console.log(prev, idx);
 										const prevValue = query[`query${currentID}`].children[idx];
 										const newObj = { ...prev };
 										newObj[`query${currentID}`].children[idx] = {
