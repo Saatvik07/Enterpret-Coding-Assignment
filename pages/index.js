@@ -282,7 +282,7 @@ export default function Home() {
 					/>
 				</div>
 				<Button
-					label='Add filter'
+					label='Generate Query'
 					onClick={() => {
 						const valid = validateInputs();
 						if (valid) {
